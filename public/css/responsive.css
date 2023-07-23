@@ -49,6 +49,9 @@
     .whitelist-wrapper .timer .timer-card .timer-item span {
       width: 35px;
       height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
   }
   .whitelist .timer{
     gap: 10px;
