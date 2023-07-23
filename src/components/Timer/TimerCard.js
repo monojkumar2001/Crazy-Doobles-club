@@ -102,7 +102,7 @@ const TimerCard
   setInterval(countDown, 1000);
   return (
     <>
-    <div className="timer d-flex algin-items-center gap-3 mt-3 justify-content-center">
+    <div className="timer d-flex algin-items-center gap-4 mt-3 justify-content-center">
         <div className="timer-card d-flex flex-column gap-3">
             <div className="timer-item d-flex align-item-center gap-3">
                 <span>{day1}</span>

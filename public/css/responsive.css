@@ -31,7 +31,7 @@
 }
 @media screen and (max-width: 564px) {
     .whitelist-wrapper .timer .timer-card .timer-item span {
-        font-size: 20px;
+        font-size: 18px;
         padding: 5px 10px;
         line-height: 25px;
         border-radius: 6px;
@@ -46,4 +46,14 @@
     .whitelist-wrapper p {
         font-size: 20px;
     }
+    .whitelist-wrapper .timer .timer-card .timer-item span {
+      width: 35px;
+  }
+  .timer.d-flex.algin-items-center.gap-4.mt-3.justify-content-center {
+    gap: 20px !important;
+}
+
+.white-list-blur {
+  display: none;
+}
 }
