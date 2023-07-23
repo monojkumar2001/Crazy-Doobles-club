@@ -48,10 +48,11 @@
     }
     .whitelist-wrapper .timer .timer-card .timer-item span {
       width: 35px;
+      height: 35px;
   }
-  .timer.d-flex.algin-items-center.gap-4.mt-3.justify-content-center {
-    gap: 20px !important;
-}
+  .whitelist .timer{
+    gap: 10px;
+  } 
 
 .white-list-blur {
   display: none;

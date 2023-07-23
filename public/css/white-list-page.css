@@ -57,3 +57,6 @@
   width: 400px;
   height: 400px;
 }
+.whitelist .timer{
+  gap: 30px;
+} 
