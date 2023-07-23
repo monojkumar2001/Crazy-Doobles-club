@@ -1,0 +1,57 @@
+.whitelist {
+  padding: 200px 0 100px 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+.whitelist-wrapper {
+  width: 60%;
+  text-align: center;
+}
+.whitelist-wrapper p {
+  font-size: 24px;
+  color: var(--black-color);
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-bottom: 0;
+}
+.whitelist-wrapper .timer .timer-card .timer-item span {
+  background-color: var(--black-color);
+  font-size: 35px;
+  padding: 10px 15px;
+  line-height: 40px;
+  font-family: var(--primary-font);
+  border-radius: 10px;
+}
+.whitelist-wrapper .timer .timer-card p {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--body-font);
+}
+.white-list-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.white-list-img img {
+  width: 70%;
+}
+.white-list-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 554px;
+  background: #58c3ff;
+  filter: blur(357px);
+  width: 400px;
+  height: 400px;
+}

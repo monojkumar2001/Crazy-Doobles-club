@@ -1,0 +1,31 @@
+<svg width="1920" height="479" viewBox="0 0 1920 479" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.7593 478.114L425.734 54.372" stroke="black"/>
+<path d="M1956.46 478.114L1569.51 54.372" stroke="black"/>
+<path d="M315.455 478.114L594.493 38.1986" stroke="black"/>
+<path d="M1680.07 478.114L1400.32 38.1986" stroke="black"/>
+<path d="M594.493 476.446L776.62 1" stroke="black"/>
+<path d="M1400.32 476.446L1217.73 1" stroke="black"/>
+<path d="M865 476.559L922 6.55884" stroke="black"/>
+<path opacity="0.1" d="M1134 441.559L1074 3.55884" stroke="black"/>
+<path d="M3 440.915H1926.19" stroke="black"/>
+<path d="M3 372.987H1926.19" stroke="black"/>
+<path d="M3 311.528H1926.19" stroke="black"/>
+<path d="M3 258.156H1926.19" stroke="black"/>
+<path d="M3 212.871H1926.19" stroke="black"/>
+<path d="M3 170.82H1926.19" stroke="black"/>
+<path d="M3 135.239H1926.19" stroke="black"/>
+<path d="M3 104.51H1926.19" stroke="black"/>
+<path d="M3 70.5588H1926.19" stroke="black"/>
+<rect x="-3" y="1.55884" width="1926" height="382" fill="url(#paint0_linear_234_3)"/>
+<path d="M1923 476.559L-2.99991 476.559L-2.99992 311.559L1923 311.559L1923 476.559Z" fill="url(#paint1_linear_234_3)"/>
+<defs>
+<linearGradient id="paint0_linear_234_3" x1="960" y1="1.55884" x2="960" y2="383.559" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F0F5FC"/>
+<stop offset="1" stop-color="#F0F4F9" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_234_3" x1="960" y1="476.559" x2="960" y2="311.559" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F0F5FC"/>
+<stop offset="1" stop-color="#F0F4F9" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,59 @@
+.join-community {
+    position: relative;
+}
+.join-community-wrapper{
+    border-radius: 40px;
+    border: 3px solid #000;
+    background: #FFC099;
+    padding:80px 50px; 
+    box-shadow: 10px 10px 0 var(--black-color);
+}
+.join-community-wrapper .join-community-content{
+    width: 60%;
+    margin: auto;
+    display: f;
+    text-align: center;
+}
+.join-community-wrapper .join-community-content .social-media-link a{
+    background: var(--black-color);
+    color: var(--white-color);
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    font-size: 30px;
+}
+.join-community-wrapper .join-community-content .section-title{
+    -webkit-text-stroke: 2px #00172C;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    z-index: 1;
+}
+.join-community .copy-right-text{
+    color: var(--black-color);
+    font-weight: 600;
+    margin-top: 30px;
+    text-align: center;
+}
+.join-community .join-img-1{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.join-community .join-img-1 img{
+width: 80%;
+
+}
+.join-community .join-img-2{
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+.join-community .join-img-2 img{
+    width: 80%;
+}
