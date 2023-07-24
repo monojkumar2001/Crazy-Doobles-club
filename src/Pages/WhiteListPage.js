@@ -12,7 +12,7 @@ const WhiteListPage = () => {
                 <p>wHITELLIST AND NFT DROPS</p>
                 <TimerCard/>
                 <div className="custom-btn">
-                    CONNECT WALLET
+                Join discord
                 </div>
               <div className="social-media-items mt-4">
               <SocialMediaLinkItem/>
@@ -24,6 +24,13 @@ const WhiteListPage = () => {
           width='auto'
           height='auto'
           src='/images/white-list-img.svg'
+          />
+        </div>
+        <div className="mb-white-list-img">
+          <LazyLoadImage 
+          width='auto'
+          height='auto'
+          src='/images/m-white-list-img.svg'
           />
         </div>
         <div className="white-list-blur"></div>

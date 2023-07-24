@@ -36,7 +36,7 @@ function Header() {
               <img src="./images/close.svg" alt="" />
             </div>
             <ul className="menu-nav-ul">
-              <div className="left-side d-flex algin-items-center gap-4">
+              <div className="left-side d-flex algin-items-center">
                 <li className="nav-list">
                   <HashLink
                     to="/"
@@ -79,7 +79,7 @@ function Header() {
                   <img src="/images/logo.png" alt="" className="logo-img" />
                 </Link>
               </li>
-              <div className="left-side d-flex algin-items-center gap-4">
+              <div className="left-side d-flex algin-items-center">
                 <SocialMediaLinkItem/>
                 <button className="connect-wallet-btn">
                   Connect wallet

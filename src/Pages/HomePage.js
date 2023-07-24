@@ -1,7 +1,5 @@
-// import LeftImages from "../components/LeftImages";
 import MintCardItem from "../components/MintCard/MintCardItem";
 import ImageMarqueeCard from "../components/marquee/ImageMarqueeCard";
-// import LeftImages from "../components/LeftImages";
 import TextMarqueeItem from "../components/marquee/TextMarqueeItem";
 import React from "react";
 import RoadmapItemcard from "../components/roadmapItem/RoadmapItemcard";
@@ -9,33 +7,15 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import TeamCardItem from "../components/TeamCard/TeamCardItem";
 import FaqContentItem from "../components/faqContentItem/FaqContentItem";
 import SocialMediaLinkItem from "../components/SocialMediaLink/SocialMediaLinkItem";
+import LeftImages from "../components/Hero/LeftImages";
+import RightImages from "../components/Hero/RightImages";
 function HomePage() {
-  // const videoRef = useRef(null);
-
-  // useEffect(() => {
-  //   const handlePlay = () => {
-  //     if (videoRef.current) {
-  //       videoRef.current.play().catch((error) => {
-  //         // Autoplay was blocked or failed, handle it here.
-  //         console.error("Autoplay was blocked:", error);
-  //       });
-  //     }
-  //   };
-
-  //   document.addEventListener("click", handlePlay);
-
-  //   return () => {
-  //     document.removeEventListener("click", handlePlay); // Remove the event listener when the component unmounts
-  //   };
-  // }, []);
-
-  // const videoUrl = `${process.env.PUBLIC_URL}/images/item-img.webm`;
   return (
     <React.Fragment>
-      {/* <div className="hero-section">
+      <div className="hero-section">
         <div className="hero-wrapper">
           <div className="hero-section-content">
-            <div className="image-stripbar left-sideImage">
+            {/* <div className="image-stripbar left-sideImage">
               <img
                 src="/images/left-img-1.svg"
                 className="carousel-img image-scale-1"
@@ -66,18 +46,18 @@ function HomePage() {
                 className="carousel-img image-scale-6"
                 alt=""
               />
-            </div>
-      
-            <div className="hero-center-items">
+            </div> */}
+            <LeftImages/>
+            <div className="hero-center-items d-flex align-items-center flex-column gap-4">
               <div className="hero-center-img">
                 <img src="/images/hero-center-img.svg" alt="" />
               </div>
               <button className="custom-btn">Join discord</button>
             </div>
-            <div className="image-stripbar right-sideImage"></div>
+            <RightImages/>
           </div>
         </div>
-      </div> */}
+      </div>
       {/* =============== Marquee Image Item =========*/}
       <div className="marque-section cpb-6">
         <ImageMarqueeCard />
