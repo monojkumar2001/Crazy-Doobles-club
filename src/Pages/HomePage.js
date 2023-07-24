@@ -32,7 +32,7 @@ function HomePage() {
   // const videoUrl = `${process.env.PUBLIC_URL}/images/item-img.webm`;
   return (
     <React.Fragment>
-      <div className="hero-section">
+      {/* <div className="hero-section">
         <div className="hero-wrapper">
           <div className="hero-section-content">
             <div className="image-stripbar left-sideImage">
@@ -67,7 +67,7 @@ function HomePage() {
                 alt=""
               />
             </div>
-            {/* <LeftImages /> */}
+      
             <div className="hero-center-items">
               <div className="hero-center-img">
                 <img src="/images/hero-center-img.svg" alt="" />
@@ -77,7 +77,7 @@ function HomePage() {
             <div className="image-stripbar right-sideImage"></div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* =============== Marquee Image Item =========*/}
       <div className="marque-section cpb-6">
         <ImageMarqueeCard />

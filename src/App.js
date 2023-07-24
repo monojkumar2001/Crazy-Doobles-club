@@ -17,11 +17,11 @@ function App() {
     <>
     <BrowserRouter>
     <Header/>
-    {/* <Routes>
-      <Route path="/" element={<HomePage/>} />
-    </Routes> */}
     <Routes>
-      <Route path="/" element={<WhiteListPage/>} />
+      <Route path="/" element={<HomePage/>} />
+    </Routes>
+    <Routes>
+      <Route path="/whitelist" element={<WhiteListPage/>} />
     </Routes>
     <Routes>
       <Route path="/whitelist-2" element={<WhiteListPage2/>} />
