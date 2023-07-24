@@ -71,7 +71,13 @@
 .marquee-container {
   overflow-x:none !important ;
 }
-
+.input-email-item{
+  width: 80%;
+}
+.input-email-item input{
+  width: 100%;
+  padding: 12px 20px;
+}
 
 .left-sideImage .image-scale-5 {
   width: 56px;

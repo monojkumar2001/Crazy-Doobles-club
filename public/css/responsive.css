@@ -55,6 +55,9 @@
       font-size: 18px;
 
   }
+  .input-email-item{
+    width: 100%;
+  }
   .whitelist .timer{
     gap: 10px;
   } 

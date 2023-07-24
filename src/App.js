@@ -1,4 +1,4 @@
-import React,{Suspense} from "react";
+import React from "react";
 import Header from "./components/Header";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import "bootstrap/dist/css/bootstrap.css";
@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import HomePage from "./Pages/HomePage";
 import WhiteListPage from "./Pages/WhiteListPage";
+import WhiteListPage2 from "./Pages/WhiteListPage2";
 function App() {
   useEffect(() => {
     AOS.init();
@@ -21,6 +22,9 @@ function App() {
     </Routes> */}
     <Routes>
       <Route path="/" element={<WhiteListPage/>} />
+    </Routes>
+    <Routes>
+      <Route path="/whitelist-2" element={<WhiteListPage2/>} />
     </Routes>
     </BrowserRouter>
     </>

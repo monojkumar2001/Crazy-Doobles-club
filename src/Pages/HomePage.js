@@ -1,46 +1,42 @@
 // import LeftImages from "../components/LeftImages";
 import MintCardItem from "../components/MintCard/MintCardItem";
 import ImageMarqueeCard from "../components/marquee/ImageMarqueeCard";
-import LeftImages from "../components/LeftImages";
+// import LeftImages from "../components/LeftImages";
 import TextMarqueeItem from "../components/marquee/TextMarqueeItem";
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import RoadmapItemcard from "../components/roadmapItem/RoadmapItemcard";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import TeamCardItem from "../components/TeamCard/TeamCardItem";
 import FaqContentItem from "../components/faqContentItem/FaqContentItem";
 import SocialMediaLinkItem from "../components/SocialMediaLink/SocialMediaLinkItem";
 function HomePage() {
-  const videoRef = useRef(null);
+  // const videoRef = useRef(null);
 
-  useEffect(() => {
-    const handlePlay = () => {
-      if (videoRef.current) {
-        videoRef.current.play().catch((error) => {
-          // Autoplay was blocked or failed, handle it here.
-          console.error("Autoplay was blocked:", error);
-        });
-      }
-    };
+  // useEffect(() => {
+  //   const handlePlay = () => {
+  //     if (videoRef.current) {
+  //       videoRef.current.play().catch((error) => {
+  //         // Autoplay was blocked or failed, handle it here.
+  //         console.error("Autoplay was blocked:", error);
+  //       });
+  //     }
+  //   };
 
-    document.addEventListener("click", handlePlay);
+  //   document.addEventListener("click", handlePlay);
 
-    return () => {
-      document.removeEventListener("click", handlePlay); // Remove the event listener when the component unmounts
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("click", handlePlay); // Remove the event listener when the component unmounts
+  //   };
+  // }, []);
 
-  const videoUrl = `${process.env.PUBLIC_URL}/images/item-img.webm`;
+  // const videoUrl = `${process.env.PUBLIC_URL}/images/item-img.webm`;
   return (
     <React.Fragment>
       <div className="hero-section">
         <div className="hero-wrapper">
           <div className="hero-section-content">
             <div className="image-stripbar left-sideImage">
-              {/* <video autoPlay controls ref={videoRef}>
-                <source src={videoUrl} type="video/webm" />
-                Your browser does not support the video tag.
-              </video> */}
-              {/* <img
+              <img
                 src="/images/left-img-1.svg"
                 className="carousel-img image-scale-1"
                 alt=""
@@ -69,16 +65,15 @@ function HomePage() {
                 src="/images/left-img-6.svg"
                 className="carousel-img image-scale-6"
                 alt=""
-              /> */}
-            
+              />
             </div>
-            <LeftImages/>
-            {/* <div className="hero-center-items">
+            {/* <LeftImages /> */}
+            <div className="hero-center-items">
               <div className="hero-center-img">
                 <img src="/images/hero-center-img.svg" alt="" />
               </div>
               <button className="custom-btn">Join discord</button>
-            </div> */}
+            </div>
             <div className="image-stripbar right-sideImage"></div>
           </div>
         </div>
@@ -234,39 +229,37 @@ function HomePage() {
           <div className="faq-wrapper">
             <h1 className="section-title">frequently asked questions</h1>
             <div className="faq-content-wrapper cpt-6">
-            <div className="faq-content-con">
-              <div className="faq-content-item faq-content-item-1">
-                <FaqContentItem
-                  question="What is crazy doodles ?"
-                  answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
-                  img="/images/Q.svg"
-                />
+              <div className="faq-content-con">
+                <div className="faq-content-item faq-content-item-1">
+                  <FaqContentItem
+                    question="What is crazy doodles ?"
+                    answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
+                    img="/images/Q.svg"
+                  />
+                </div>
+                <div className="faq-content-item faq-content-item-2">
+                  <FaqContentItem
+                    question="What is crazy doodles ?"
+                    answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
+                    img="/images/Q.svg"
+                  />
+                </div>
+                <div className="faq-content-item faq-content-item-3">
+                  <FaqContentItem
+                    question="What is crazy doodles ?"
+                    answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
+                    img="/images/Q.svg"
+                  />
+                </div>
+                <div className="faq-content-item faq-content-item-4">
+                  <FaqContentItem
+                    question="What is crazy doodles ?"
+                    answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
+                    img="/images/Q.svg"
+                  />
+                </div>
               </div>
-              <div className="faq-content-item faq-content-item-2">
-                <FaqContentItem
-                  question="What is crazy doodles ?"
-                  answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
-                  img="/images/Q.svg"
-                />
-              </div>
-              <div className="faq-content-item faq-content-item-3">
-                <FaqContentItem
-                  question="What is crazy doodles ?"
-                  answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
-                  img="/images/Q.svg"
-                />
-              </div>
-              <div className="faq-content-item faq-content-item-4">
-                <FaqContentItem
-                  question="What is crazy doodles ?"
-                  answer='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'
-                  img="/images/Q.svg"
-                />
-              </div>
-
- 
-            </div>
-            <div className="faq-item-img">
+              <div className="faq-item-img">
                 <LazyLoadImage
                   src="/images/faq-img.svg"
                   width="auto"
@@ -278,35 +271,33 @@ function HomePage() {
         </div>
       </section>
       {/* =================== Join Our Community ============= */}
-      <section className="join-community cpb-6">
+      <section className="join-community cpb-7">
         <div className="container">
-            <div className="join-community-wrapper d-flex align-items-center justify-content-center flex-column">
-           <div className="join-community-content  d-flex align-items-center justify-content-center flex-column">
-           <h1 className='section-title'>
-               JOIN OUR COMMUNITY
-               </h1>
-               <SocialMediaLinkItem/>
-           </div>
+          <div className="join-community-wrapper d-flex align-items-center justify-content-center flex-column">
+            <div className="join-community-content  d-flex align-items-center justify-content-center flex-column">
+              <h1 className="section-title">JOIN OUR COMMUNITY</h1>
+              <SocialMediaLinkItem />
             </div>
-            <p className="copy-right-text">
+          </div>
+          <p className="copy-right-text">
             © 2022 crazy doodles - All Rights RESERVED
-            </p>
+          </p>
         </div>
         <div className="join-img-1">
-          <LazyLoadImage 
-          width='auto'
-          height='auto'
-          src="/images/join-img-1.svg"
+          <LazyLoadImage
+            width="auto"
+            height="auto"
+            src="/images/join-img-1.svg"
           />
         </div>
         <div className="join-img-2">
-          <LazyLoadImage 
-          width='auto'
-          height='auto'
-          src="/images/join-img-2.svg"
+          <LazyLoadImage
+            width="auto"
+            height="auto"
+            src="/images/join-img-2.svg"
           />
         </div>
-    </section>
+      </section>
     </React.Fragment>
   );
 }
