@@ -1,0 +1,393 @@
+.gallery{
+    padding: 0px 80px 0px 80px;
+}
+
+.gallery-sidebar{
+position: fixed;
+padding-top: 150px;
+height: 80vh;
+width: 20%;
+}
+.sidebar-filter{
+    position: relative;
+    transition: 0.4s;
+}
+.gallery-wrapper{
+    width: 100%;
+    padding-top: 200px;
+}
+.gallery-sideber-wrapper .filter-title h4{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--black-color);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--black-color);
+}
+.gallery-sideber-wrapper .filter-items{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: calc(100vh - 15.5rem);
+    overflow-y: auto;
+}
+.gallery-sideber-wrapper .filter-items .filter-search-item{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+}
+.gallery-sideber-wrapper .filter-items .filter-search-item input{
+    border: none;
+    background: none;
+    outline: none;
+}
+.filter-item-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter-list-item-ber{
+    display: none;
+    color: black;
+
+}
+.filter-left-items{
+    width: 100%;
+
+}
+.filter-left-items .filter-type img{
+    width: 30px;
+    height: 30;
+}
+.filter-left-items span{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+ul.filter-list-item-ber.active {
+    display:block;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.gallery-card-items{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+}
+.gallery-card-items .images-card {
+    gap: 15px;
+    cursor: pointer;
+}
+.gallery-card-items .images-card p{
+    opacity: 0.7;
+    color: var(--black-color);
+    font-size: 16px;
+}
+.gallery-card-items .images-card span{
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.gallery-card-items .images-card .nft-img{
+    width: 100%;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.25);
+}
+.gallery-card-items .images-card .nft-img img{
+    width: 100%;
+}
+.gallery-header-item .gallery-con-btn button{
+    border-radius: 6px;
+background: rgba(0, 23, 44, 0.05);
+padding: 10px 20px;
+color: var(--black-color);
+text-decoration: none;
+font-size: 18px;
+font-weight: 700;
+border: none;
+}
+.gallery-header-item .gallery-count span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--black-color);
+}
+.gallery-header-item .gallery-count .gallery-refresh-btn{
+    border: none;
+    background: none;
+}
+.gallery-header-item .gallery-count .gallery-refresh-btn{
+  width: 30px;
+  height: 30px;
+}
+.filter-item-bar .toggle-icons{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+.active-filter-item-bar .toggle-icons img{
+    display: none;
+}
+.active-filter-item-bar .toggle-icons::before{
+    content: '';
+    position: absolute;
+    background-image: url(../../public/images/plus.svg);
+    width: 13px;
+    height: 13px;
+    background-repeat: no-repeat;
+}
+.filter-list-item{
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* ======================== Image Model ================ */
+
+.filter-item-model-image{
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #EFF7FF;
+    box-shadow: 7px 7px 0px  var(--black-color); 
+}
+.filter-item-model-image .filter-image-header{
+    border-bottom: none;
+}
+.filter-image-item-model{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 25px 25px 25px;
+}
+.filter-image-item-model .filter-model-img{
+    width: 450px;
+}
+.filter-image-item-model .filter-model-img img{
+    width: 100%;
+}
+.filter-nft-content  span{
+    color: var(--black-color);
+    opacity: 0.5;
+    font-size: 14px;
+}
+.filter-nft-content  .nft-title h4{
+color: var(--black-color);
+font-size: 18px;
+font-weight: 700;
+padding-top: 10px;
+}
+.filter-nft-content .filter-nft-content-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.filter-nft-content .filter-nft-content-items h5{
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+.filter-nft-content .filter-nft-content-items .filter-nft-content-item{
+    padding: 5px 15px;
+    border-radius: 4px;
+background: rgba(0, 0, 0, 0.10);
+display: flex;
+align-items: center;
+gap: 10px;
+height: 100%;
+}
+.filter-nft-content .filter-nft-content-items .filter-nft-content-item .nft-content-item-icon img{
+    width: 25px;
+    height: 25px;
+}
+.filter-nft-wallet{
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.10);
+    padding: 5px 15px;
+}
+.filter-nft-wallet .nft-wallet-content p{
+    color: var(--black-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+.filter-nft-wallet-item .filter-nft-opensea {
+    background: #00C2D2;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: none;
+    border-radius: 4px;
+}
+.filter-nft-wallet-item .filter-nft-opensea span{
+    color: var(--black-color);
+    font-size: 16px;
+    opacity: 1;
+    font-weight: 700;
+}
+.filter-menu-icon{
+    border: none;
+    background: none;
+    display: none;
+}
+.filter-menu-icon img{
+    border-radius: 4px;
+    width: 35px;
+}
+.overlays{
+    position: fixed;
+    backdrop-filter: blur(7px);
+    background: #27191999;
+    overflow-y: auto;
+    z-index: 110;
+    opacity: 0;
+     top: 0; 
+  
+  }
+  .sidebar-filter .filter-close-menu{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.form-check label{
+cursor: pointer;
+font-size: 16px;
+}
+@media screen and (max-width: 1240px) {
+    .filter-menu-icon{
+        display: block;
+    }
+    .sidebar-filter{
+       right: -100%;
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background: #EFF7FF;
+        z-index:9999999999 !important;
+        overflow-y: auto;
+        transition: 0.4s;
+      }
+      .active.sidebar-filter{
+        right:  0;
+        
+      }
+      .active.overlays {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+
+    }
+    .gallery-sidebar {
+        z-index: 111;
+    }
+    .gallery-sideber-wrapper{
+        padding: 40px 30px;
+    }
+    .gallery-sideber-wrapper .filter-items {
+        max-height: 79vh;
+    }
+    .sidebar-filter .filter-close-menu {
+        display: block;
+      }
+      .col-lg-9{
+        width: 100% !important;
+      }
+      .gallery-wrapper {
+        width: 100%;
+        padding-top: 120px;
+    }
+    .gallery {
+        padding: 0px 20px 0px 20px;
+    }
+    /* ================ model ================ */
+    .filter-image-item-model{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 25px 25px 25px;
+    }
+    .filter-image-item-model .filter-model-img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .gallery-card-items {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .filter-nft-content{
+        width: 100%;
+    }
+    .filter-nft-content .filter-nft-content-items {
+        display: flex;
+        grid-template-columns: 1fr;
+        overflow-x: scroll;
+    }
+    .filter-nft-content .filter-nft-content-items .filter-nft-content-item {
+        gap: 10px;
+    
+        white-space: nowrap;
+    }
+    .filter-nft-wallet-item {
+        flex-direction: column;
+        gap: 10px !important;
+        width: 100%;
+    }
+    .filter-nft-wallet{
+        width: 100%;
+    }
+    .filter-nft-opensea{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gallery-card-items {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 564px) {
+    .gallery-card-items {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery-con-btn {
+        gap: 10px !important;
+    }
+    .gallery-header-item .gallery-con-btn button {
+        border-radius: 6px;
+        background: rgba(0, 23, 44, 0.05);
+        padding: 10px 10px;
+        color: var(--black-color);
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+    }
+    .gallery {
+        padding: 0px 0px 0px 0px;
+    }
+    .filter-image-item-model {
+        gap: 15px;
+        padding: 0 15px 15px 15px;
+    }
+}

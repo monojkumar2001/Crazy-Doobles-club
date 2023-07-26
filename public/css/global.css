@@ -68,6 +68,9 @@
   html {
     scroll-behavior: smooth;
   }
+  p{
+    margin-bottom: 0 !important;
+  }
   
 body {
   background: #EFF7FF !important;

@@ -26,9 +26,9 @@ ul.menu-nav-ul::before {
   width: 100%;
   height: 85px;
   border-radius: 100px;
-  bottom: -14px;
+  bottom: -13px;
   z-index: -1;
-  left: 15px;
+  left: 14px;
 }
 
 .logo-nav {
@@ -291,7 +291,7 @@ ul.menu-nav-ul .left-side{
     z-index: 1;
   }
   nav.navigation .logo img {
-    width: 46%;
+    width: 70px;
 }
 }
 

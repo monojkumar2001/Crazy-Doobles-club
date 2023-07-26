@@ -164,6 +164,9 @@ position: initial;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
 }
+.mint-page {
+  padding: 120px 0 100px;
+}
 }
 @media screen and (max-width: 992px) {
   .whitelist-wrapper {
@@ -181,6 +184,7 @@ position: initial;
   }
   .about-us-content {
     width: 100%;
+    text-align: center;
   }
   /* about */
   .about-us-img {
@@ -221,21 +225,32 @@ position: initial;
 .join-community .join-img-2 img {
   width: 50%;
 }
+.mint-content{
+  margin-bottom: 50px;
+}
+.mint-content {
+  margin: 0px 0px 60px 0;
+  padding: 50px 44px;
+  background-color: var(--main-color);
+  box-shadow: 10px 10px 0 var(--black-color);
+  gap: 15px;
+  border-radius: 20px;
+}
 }
 @media screen and (max-width: 768px) {
   .about-us-wrapper .about-us-content .about-count-price-item h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 20px;
   }
   .mint-item-card h2 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
   }
   .mint .mint-blur {
     display: none;
   }
   .roadmap-content-con{
-    padding: 50px 20px 60px 20px;
+    padding: 40px 20px 40px 20px;
     width: 100%;
     margin: auto;
     display: grid;
@@ -262,6 +277,7 @@ position: initial;
   border: 3px solid #000;
   background: #FFC099;
   padding: 53px 23px;
+  margin: 0 20px;
   box-shadow: 10px 10px 0 var(--black-color);
 }
 .join-community .join-img-1 img {
@@ -281,6 +297,41 @@ position: initial;
 }
 .image-marquee-card img{
   width: 100%;
+}
+.mint-content {
+  margin: 10px 10px 60px 0;
+  padding: 30px 20px;
+  box-shadow: 10px 10px 0 var(--black-color);
+  gap: 15px;
+  border-radius: 15px;
+}
+.mint-content h2 {
+  font-size: 50px;
+}
+.mint-content .mint-price-box h4 {
+  font-size: 25px;
+  padding-top: 5px;
+}
+.mint-content .mint-total-box h4 {
+  font-size: 25px;
+}
+
+.faq-wrapper .section-title {
+  width: 100%;
+}
+.about-us-wrapper {
+  padding: 50px 20px 0px 20px;
+}
+.roadmap-content-con .roadmap-card-item {
+  padding: 40px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+.team .team-wrapper .team-card-item .team-img img {
+  width: 100%;
+}
+.team .team-wrapper .team-card-item {
+  padding: 40px 20px;
 }
 }
 @media screen and (max-width: 564px) {
@@ -334,5 +385,8 @@ padding-top: 50px;
 }
 .join-community .join-img-2 img {
   width: 27%;
+}
+.mint-content h2 {
+  font-size: 40px;
 }
 }

@@ -252,6 +252,7 @@ transition: 0.4s;
 }
 .about-us-img img{
   width: 70%;
+  cursor: pointer;
 }
 
 /* =============== Mint Item card ======== */
@@ -263,10 +264,11 @@ transition: 0.4s;
   left: 0;
   top: 100px;
   width: 500px;
-height: 500px;
-border-radius: 554px;
-background: #FFE960;
-filter: blur(357px);
+  height: 500px;
+  border-radius: 554px;
+  background: #FFE960;
+  filter: blur(357px);
+  z-index: -1;
 }
 .mint-card-item-wrapper .section-title {
   text-align: center;

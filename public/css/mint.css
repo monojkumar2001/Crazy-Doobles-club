@@ -1,0 +1,101 @@
+.mint-page{
+    padding: 200px 0 100px;
+}
+.mint-content{
+    margin: 0 40px;
+    padding: 50px 44px;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 0 var(--black-color);
+    gap:15px;
+    border-radius: 20px;
+}
+.mint-content h2{
+    font-size: 67px;
+    line-height: 110%;
+    font-family: var(--primary-font);
+    color: var(--black-color);
+    margin-bottom: 0;
+}
+.mint-content h2 span{
+    color: var(--white-color);
+}
+.mint-content .mint-price-box{
+    border: 2px solid #00172C;
+background: #FFF;
+padding: 10px 20px;
+width: 100%;
+border-radius: 10px;
+}
+.mint-content .mint-price-box p{
+    color:var(--black-color);
+    
+}
+.mint-content .mint-price-box h4{
+    color:var(--black-color);
+    font-family: var(--primary-font);
+    font-size: 30px;
+}
+.mint-content .mint-count-box{
+    border: 2px solid #00172C;
+background: #FFF;
+padding: 10px 20px;
+border-radius: 6px;
+}
+.mint-content .mint-count-box p{
+    color: var(--black-color);
+}
+.mint-content .mint-count-item{
+    gap: 20px;
+}
+.mint-content .mint-count-item button{
+    border: none;
+    background: none;
+    transition: 0.4s;
+}
+.mint-content .mint-count-item button:hover{
+    transform: scale(1.1);
+}
+.mint-content .mint-count-item button img{
+    width: 30px;
+    height: 30px;
+}
+.mint-content .mint-count-item span{
+    font-size: 30px;
+    font-family: var(--primary-font);
+    font-weight: 900;
+    color: var(--black-color);
+}
+.mint-content .mint-total-box h4{
+    font-size: 30px;
+    font-family: var(--primary-font);
+    font-weight: 900;
+    color: var(--black-color);
+}
+.mint-content .mint-total-box p{
+    color: var(--black-color);
+}
+.mint-content .mint-btn{
+    border-radius: 6px;
+background: var(--black-color);
+padding: 10px 20px;
+color: var(--white-color);
+border: none;
+font-family: var(--primary-font);
+font-size: 22px;
+width: 100%;
+transition: 0.4s;
+}
+.mint-content .mint-btn:hover{
+    transform: scale(1.05);
+}
+.mint-content .amount-item{
+    color: var(--black-color);
+}
+.mint-img img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.mint-img img:hover{
+    transform: scale(1.05);
+}
