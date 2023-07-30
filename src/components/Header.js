@@ -39,7 +39,7 @@ function Header() {
               <div className="left-side d-flex algin-items-center">
                 <li className="nav-list">
                   <HashLink
-                    to="/"
+                    to="/mint"
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
@@ -52,12 +52,12 @@ function Header() {
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
-                    Tokenomics 
+                   About 
                   </HashLink>
                 </li>
                 <li className="nav-list">
                   <HashLink
-                    to="#about"
+                    to="#roadmap"
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
@@ -66,7 +66,16 @@ function Header() {
                 </li>
                 <li className="nav-list">
                   <HashLink
-                    to="#about"
+                    to="/gallery"
+                    className="nav-link"
+                    onClick={_toggleSidebar}
+                  >
+                  Gallery
+                  </HashLink>
+                </li>
+                <li className="nav-list">
+                  <HashLink
+                    to="#faq"
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >

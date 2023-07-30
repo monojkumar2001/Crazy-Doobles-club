@@ -71,9 +71,14 @@
   p{
     margin-bottom: 0 !important;
   }
-  
+  /* .app-con {
+    overflow: hidden;
+} */
+html{
+  scroll-behavior: smooth;
+}
 body {
-  background: #EFF7FF !important;
+  /* background: radial-gradient(#ffffff, #00A3FF); */
     font-size: var(--p-font) !important;
     font-weight: 400;
     font-family: var(--body-font) !important;
@@ -81,7 +86,12 @@ body {
     /* overflow: hidden; */
     color: #ffffff !important;
   }
-  
+  /* .app-con{
+    width: 100%;
+    position:absolute;
+    height: 100vh;
+   background: radial-gradient(#ffffff, #00A3FF);
+  } */
   img {
     vertical-align: middle;
     height: auto;

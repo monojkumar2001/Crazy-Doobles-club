@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="app-con">
     <BrowserRouter>
     <Header/>
     <Routes>
@@ -38,7 +38,7 @@ function App() {
       <Route path="/gallery" element={<GalleryPage/>} />
     </Routes>
     </BrowserRouter>
-    </>
+    </div>
   );
 }
 

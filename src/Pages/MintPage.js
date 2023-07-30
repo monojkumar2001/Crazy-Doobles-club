@@ -1,17 +1,10 @@
 import React, { useState } from "react";
-import ImageMarqueeCard from "../components/marquee/ImageMarqueeCard";
 import TextMarqueeItem from "../components/marquee/TextMarqueeItem";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const MintPage = () => {
   return (
     <>
   <div className="mint-page">
-  <div className="marque-section cpb-7">
-        <ImageMarqueeCard/>
-      </div>
-      <div className="marque-text-section">
-        <TextMarqueeItem/>
-      </div>
       <div className="mint-wrapper">
         <div className="container">
           <div className="row d-flex align-items-center">
@@ -56,6 +49,9 @@ const MintPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="marque-text-section marque-text-section-mint">
+        <TextMarqueeItem/>
       </div>
   </div>
     </>

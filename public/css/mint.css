@@ -1,5 +1,9 @@
 .mint-page{
-    padding: 200px 0 100px;
+    padding: 200px 0 0 0px;
+    height: 100vh;
+}
+.marque-text-section-mint{
+    margin-top: 100px;
 }
 .mint-content{
     margin: 0 40px;
@@ -92,7 +96,7 @@ transition: 0.4s;
     color: var(--black-color);
 }
 .mint-img img{
-    width: 100%;
+    width: 80%;
     cursor: pointer;
     transition: 0.4s;
 }

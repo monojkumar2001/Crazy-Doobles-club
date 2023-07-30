@@ -8,7 +8,7 @@ const TextMarqueeItem = () => {
         {
             data.map((item, i)=>{
                 return(
-                <div className="text-marquee-item" key={1}>
+                <div className="text-marquee-item" key={i}>
                     <h2>{item.text}</h2>
                 </div>
                 )

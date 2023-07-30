@@ -3,7 +3,10 @@ import React from 'react'
 const RightImages = () => {
   return (
     <>
-           <div className="image-stripbar right-sideImage">
+           <div className="image-stripbar right-sideImage"  data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="2000">
               <img
                 src="/images/right-img-1.svg"
                 className="carousel-img image-scale-1"

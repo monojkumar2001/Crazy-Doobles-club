@@ -3,7 +3,17 @@
 @import url('./Header.css');
 
 /*----------------- intro ---------------*/
-
+/* .home-page{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+  width: 700px;
+  height: 700px;
+  border-radius: 554px;
+background: #FFABAB;
+filter: blur(357px);
+} */
 .hero-wrapper{
   min-height: calc(100vh - 32px);
   background-image: url(../images/hero-bg-img.svg);
@@ -20,7 +30,29 @@
   padding: 200px 0px 46px;
   background-color: #EFF7FF;
 }
-
+.hero-section{
+  position: relative;
+}
+.hero-blur-1{
+  border-radius: 554px;
+background: #58C3FF;
+filter: blur(357px);
+width: 500px;
+height: 500px;
+position: absolute;
+top: 0;
+left: 0;
+}
+.hero-blur-2{
+  border-radius: 554px;
+  background: #FFC099;
+  filter: blur(357px);
+width: 500px;
+height: 500px;
+position: absolute;
+bottom: 0;
+right: 0;
+}
 .hero-wrapper .hero-section-content{
   display: flex;
     -webkit-box-pack: justify;
@@ -39,6 +71,8 @@
   position: absolute;
   /* border-radius: 14px; */
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .right-sideImage .carousel-img {
   position: absolute;
@@ -51,6 +85,7 @@
   top: 250px;
   right: 250px;
   z-index: 12;
+
 }
 .left-sideImage .image-scale-2 {
   width: 196px;
@@ -89,6 +124,17 @@
   z-index: 2;
   border-radius: 7px !important;
 }
+/* 
+@keyframes img1{
+  0% {right:  0px;}
+  50%{
+   right: -200px;
+  }
+  100%{
+    right: 0px;
+  }
+} */
+
 .right-sideImage .image-scale-1 {
   width: 246px;
   height: 246px;
@@ -163,11 +209,6 @@ width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
-
-
-
-
-
 
 /* =================== Marque Section ================ */
 .input-email-item{
@@ -270,6 +311,16 @@ transition: 0.4s;
   filter: blur(357px);
   z-index: -1;
 }
+.mint-blur-2{
+  border-radius: 554px;
+  background: #58C3FF;
+  filter: blur(357px);
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+right:  0;
+}
 .mint-card-item-wrapper .section-title {
   text-align: center;
 }
@@ -325,91 +376,157 @@ box-shadow: 7px 7px 0 var(--black-color);
 }
 
 /* ============ Roadmap Section ============== */
-
+.roadmap {
+  padding-bottom: 100px;
+  position: relative;
+}
+.roadmap .container-fluid{
+  padding: 0;
+  
+}
 .roadmap-wrapper .section-title{
   text-align: center;
 }
 
-.roadmap-bg-img img{
+.roadmap-wrapper .roadmap-item{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items:flex-start;
+  height: 100%;
+}
+
+.roadmap-site-img-item .roadmap-left-img{
   width: 100%;
 }
-
-.roadmap-content-con{
+.roadmap-site-img-item .roadmap-left-img img{
+  width: 100%;
+  border-radius: 0 70px 0 0;
+}
+.roadmap-content-item{
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 350px;
+  width: 100%;
+  padding: 50px;
+  border-top: 2px solid var(--black-color) ;
+  border-left: 2px solid var(--black-color) ;
+  border-radius: 40px 0 0 0;
+  height: 100%;
 }
-
-.roadmap-content-con .roadmap-card-item{
-  padding:40px 20px;
-  border-radius: 20px;
-  border: 1px solid #000;
-  position: relative;
-  cursor: pointer;
-  transition: 0.4s;
-  box-shadow: 7px 7px 0 var(--black-color);
-}
-.roadmap-content-con .roadmap-card-item:hover{
-  transform: scale(1.05);
-}
-.roadmap-content-con .roadmap-card-item::before{
-content: '';
-position: absolute;
-background-image: url(../images/roadmap-bottom-arrow.svg);
-background-repeat: no-repeat;
-background-size: 50px;
-width: 50px;
-height: 50px;
-bottom: -10%;
-left: 50%;
-transform: translate(-50%, 50%);
-z-index: -1;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.roadmap-content-con .roadmap-card-item h2{
-  font-size: 40px;
+.roadmap-persen h1{
+  font-size: 90px;
   font-weight: 900;
   font-family: var(--primary-font);
+  line-height: 109%;
   color: var(--black-color);
-  letter-spacing: 2px;
+  position: relative;
 }
-.roadmap-content-con .roadmap-card-item p{
-  color: var(--black-color);
-  font-weight: 600;
+.roadmap-content-item .roadmap-persen h1::before{
+  content: '';
+  position: absolute;
+  background-image: url(../images/okay.svg);
+  left: 22%;
+  width: 30%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.roadmap-content-item h4{
+  font-size: 25px;
+  font-weight: 700;
+  width: 50%;
+  line-height: 191%;
   font-family: var(--body-font);
+  color: var(--black-color);
 }
-.roadmap-content-con .roadmap-card-item-1{background: #99C4FF;width: 400px;position: absolute;top: 23%;left: 14%;}
-.roadmap-content-con .roadmap-card-item-2{
-  background: #FFF199;
-  width: 350px;
+.roadmap-wrapper .buy-opensea-btn{
+  margin-top: 20px;
+}
+.roadmap-content-item-box{
+  height: 100%;
+}
+.roadmap-site-img-item{
+  position: relative;
+}
+.roadmap-site-img-item::before{
+  content: "";
+  width: 24%;
+  height: 66%;
   position: absolute;
-  top: 2%;
-  left: 33%;
+  right: 20px;
+  bottom: -110px;
+  background-image: url(../images/roadmap-bottom-arrow-2.svg);
+  background-repeat: no-repeat;
+  z-index: 1;
 }
-.roadmap-content-con .roadmap-card-item-3{
-  background: #00A3FF;
-  width: 300px;
+.roadmap-content-item-box-2{
+  width: 100%;
+  text-align: right;
+}
+.roadmap-content-item-box-2 .roadmap-content-item-2{
+  position: relative;
+  padding: 50px;
+  border-top: 2px solid var(--black-color) ;
+  border-right: 2px solid var(--black-color) ;
+  border-radius: 0 40px 0 0;
+  height: 100%;
+text-align: right;
+}
+
+.roadmap-content-item-2 .roadmap-persen h1{
+  position: relative;
+}
+.roadmap-content-item-2 .roadmap-persen h1::before{
+  content: '';
   position: absolute;
-  top: -13%;
-  left: 59%;
+  background-image: url(../images/okay.svg);
+  right: 9%;
+  width: 29%;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-.roadmap-content-con .roadmap-card-item-4{
-  background: #032341;
-  width: 250px;
+.roadmap-content-item-2 h4{
+  font-size: 25px;
+  font-weight: 700;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 191%;
+  font-family: var(--body-font);
+  color: var(--black-color);
+  margin-left: auto;
+}
+.roadmap-site-img-item-2 .roadmap-left-img{
+  width: 100%;
+}
+.roadmap-site-img-item-2 .roadmap-left-img img{
+  width: 100%;
+  border-radius: 70px 0 0 0;
+}
+.roadmap-site-img-item-2{
+  position: relative;
+}
+.roadmap-site-img-item-2::before{
+  content: "";
+  width: 30%;
+  height: 66%;
   position: absolute;
-  top: -20%;
-  right: 8%;
+  left: 20px;
+  bottom: -114px;
+  background-image: url(../images/roadmap-bottom-arrow-2.svg);
+  background-repeat: no-repeat;
 }
-.roadmap-content-con .roadmap-card-item-4 h2{
-color: var(--white-color);
+.roadmap-content-item .roadmap-persen-5 h1::before {
+display: none;
 }
-.roadmap-content-con .roadmap-card-item-4 p{
-color: var(--white-color);
+.roadmap-blur-1{
+  position: absolute;
+ right:  0;
+  top: 30%;
+  border-radius: 554px;
+background: #fa9a9a;
+filter: blur(350px);
+width: 500px;
+height: 500px;
 }
 
 /* ================== Team Section ============ */
@@ -475,6 +592,19 @@ top: -15%;
 }
 
 /* ================== Faq Section ============ */
+.faq{
+  position: relative;
+}
+.faq .faq-blur{
+  border-radius: 554px;
+background: #FFC099;
+filter: blur(357px);
+position: absolute;
+left: 20px;
+top: 20%;
+width: 500px;
+height: 500px;
+}
 .faq-wrapper .section-title{
   width: 80%;
   margin: auto;
