@@ -717,6 +717,8 @@ const GalleryPage = () => {
             </div>
           </div>
         </div>
+        <div className="gallery-blur-1"></div>
+        <div className="gallery-blur-2"></div>
       </div>
     </>
   );

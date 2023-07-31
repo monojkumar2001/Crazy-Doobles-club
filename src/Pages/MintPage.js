@@ -5,6 +5,7 @@ const MintPage = () => {
   return (
     <>
   <div className="mint-page">
+
       <div className="mint-wrapper">
         <div className="container">
           <div className="row d-flex align-items-center">
@@ -53,6 +54,8 @@ const MintPage = () => {
       <div className="marque-text-section marque-text-section-mint">
         <TextMarqueeItem/>
       </div>
+      <div className="mint-page-blur-1"></div>
+      <div className="mint-page-blur-2"></div>
   </div>
     </>
   );

@@ -39,14 +39,14 @@ const ImageCard = ({uniqueData}) => {
 
   return (
     <>
-      {uniqueData.map((item,i)  => {
+      {uniqueData.map((item)  => {
         return (
           <>
             <div
               data-bs-toggle="modal"
               data-bs-target="#nft-model"
               className="images-card d-flex align-items-center justify-content-center flex-column"
-              key={i}
+              key={item.edition}
 
               onClick={()=>{
                 NFTsData(item.edition)
@@ -77,7 +77,7 @@ const ImageCard = ({uniqueData}) => {
             id="nft-model"
             data-bs-backdrop="static"
             data-bs-keyboard="false"
-            tabindex="-1"
+            tabIndex="-1"
             aria-labelledby="staticBackdropLabel"
             aria-hidden="true"
           >
@@ -113,9 +113,9 @@ const ImageCard = ({uniqueData}) => {
                         filterData.map((nft,i)=>{
                            return(
                             <div className="filter-nft-content-item" key={i}>
-                            <div className="nft-content-item-icon">
+                            {/* <div className="nft-content-item-icon">
                               <img src={`/images/fire${i}.svg`} alt="" />
-                            </div>
+                            </div> */}
                             <div className="filter-content-title">
                               <span>{nft?.trait_type}</span>
                               <h5>{nft?.value}</h5>
@@ -143,6 +143,8 @@ const ImageCard = ({uniqueData}) => {
                       </button>
                     </div>
                   </div>
+                  <div className="model-blur-1"></div>
+                  <div className="model-blur-2"></div>
                 </div>
               </div>
             </div>
@@ -155,17 +157,3 @@ const ImageCard = ({uniqueData}) => {
 
 export default ImageCard;
 
-const nftData = [
-  {
-    id: 1,
-    title: "Elemental",
-    no: "4134",
-    img: "/images/nft-1.png",
-  },
-  {
-    id: 2,
-    title: "Elemental",
-    no: "4134",
-    img: "/images/nft-1.png",
-  },
-];

@@ -379,7 +379,7 @@
   z-index: 6;
 }
 .hero-center-items .hero-center-img img {
-  width: 60%;
+  width: 80%;
 }
 .hero-center-items .discord-btns{
   font-size: 16px;
@@ -533,6 +533,24 @@
 .app-con {
   overflow: hidden;
 }
+.mint-page {
+  padding: 150px 0 0px 0px;
+  height: 100%;
+  position: relative;
+}
+.mint-img img {
+  width: 80%;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: auto;
+  display: flex;
+}
+.marque-text-section-mint {
+  margin-top: 50px;
+}
+.mint-page .mint-page-blur-2 {
+display: none;
+}
   }
   @media screen and (max-width: 600px) {
     .left-sideImage .image-scale-4 {
@@ -577,6 +595,7 @@
   top: 149px;
   right: 4px;
   z-index: 12;
+  display: none;
 }
 
 
@@ -623,6 +642,7 @@ height: 100px;
 top: 149px;
 left: 4px;
 z-index: 12;
+display: none;
 }
 .hero-center-items .discord-btns {
   font-size: 14px;

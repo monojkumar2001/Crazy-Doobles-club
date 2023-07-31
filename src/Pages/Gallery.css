@@ -1,5 +1,6 @@
 .gallery{
     padding: 0px 80px 0px 80px;
+    position: relative;
 }
 
 .gallery-sidebar{
@@ -158,6 +159,8 @@ border: none;
     border: 2px solid #000;
     background: #EFF7FF;
     box-shadow: 7px 7px 0px  var(--black-color); 
+    position: relative;
+    overflow: hidden;
 }
 .filter-item-model-image .filter-image-header{
     border-bottom: none;
@@ -167,6 +170,27 @@ border: none;
     align-items: center;
     gap: 40px;
     padding: 0 25px 25px 25px;
+   
+}
+.filter-image-item-model .model-blur-1{
+    position: absolute;
+    border-radius:400px;
+background: #58C3FF;
+filter: blur(250px);
+width: 400px;
+height: 400px;
+top: -150px;
+left: -150px;
+}
+.filter-image-item-model .model-blur-2{
+    position: absolute;
+    border-radius:400px;
+    background: #FFC099;
+filter: blur(250px);
+width: 400px;
+height: 400px;
+bottom: -150px;
+right: -150px;
 }
 .filter-image-item-model .filter-model-img{
     width: 450px;
@@ -269,6 +293,34 @@ height: 100%;
 cursor: pointer;
 font-size: 16px;
 }
+.gallery-blur-1{
+    position: absolute;
+    border-radius: 554px;
+background: #58C3FF;
+filter: blur(357px);
+
+}
+.gallery-blur-1{
+    position: fixed;
+    top: -200px;
+    left: -200px;
+    border-radius: 554px;
+background: #58C3FF;
+filter: blur(357px);
+width: 500px;
+height: 500px;
+}
+.gallery-blur-2{
+    position: fixed;
+    top: 40%;
+   right:-200px;
+   border-radius: 554px;
+   background: #FFC099;
+   filter: blur(357px);
+width: 500px;
+height: 500px;
+}
+
 @media screen and (max-width: 1240px) {
     .filter-menu-icon{
         display: block;
@@ -364,6 +416,15 @@ font-size: 16px;
         margin-top: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .filter-image-item-model .model-blur-1{
+        display: none;
+    }
+    .filter-image-item-model .model-blur-2{
+        display: none;
+    }
+    .gallery-blur-2 {
+   display: none;
     }
 }
 @media screen and (max-width: 564px) {

@@ -1,6 +1,29 @@
 .mint-page{
     padding: 200px 0 0 0px;
     height: 100vh;
+    position: relative;
+}
+.mint-page .mint-page-blur-1{
+    position:absolute;
+    top: -200px;
+    left: -200px;
+    border-radius: 554px;
+background: #58C3FF;
+filter: blur(357px);
+width: 500px;
+height: 500px;
+
+}
+.mint-page .mint-page-blur-2{
+    position: absolute;
+    top: 40%;
+   right:-200px;
+   border-radius: 554px;
+   background: #FFC099;
+   filter: blur(357px);
+width: 500px;
+height: 500px;
+
 }
 .marque-text-section-mint{
     margin-top: 100px;
@@ -32,7 +55,7 @@ border-radius: 10px;
 }
 .mint-content .mint-price-box p{
     color:var(--black-color);
-    
+    font-weight: 700;
 }
 .mint-content .mint-price-box h4{
     color:var(--black-color);
@@ -47,6 +70,7 @@ border-radius: 6px;
 }
 .mint-content .mint-count-box p{
     color: var(--black-color);
+    font-weight:700;
 }
 .mint-content .mint-count-item{
     gap: 20px;
@@ -77,6 +101,7 @@ border-radius: 6px;
 }
 .mint-content .mint-total-box p{
     color: var(--black-color);
+    font-weight:700;
 }
 .mint-content .mint-btn{
     border-radius: 6px;
@@ -99,6 +124,9 @@ transition: 0.4s;
     width: 80%;
     cursor: pointer;
     transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 .mint-img img:hover{
     transform: scale(1.05);

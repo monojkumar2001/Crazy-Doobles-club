@@ -7,13 +7,13 @@ const SocialMediaLinkItem = () => {
   return (
     <>
       <div className="social-media-link d-flex algin-items-center gap-4">
-        <Link href="#" target="_blank">
+        <Link to="#" target="_blank">
           <FaFacebookF />
         </Link>
-        <Link href="https://www.instagram.com/crazy_doodle.nft" target="_blank">
+        <Link to="https://www.instagram.com/crazy_doodle.nft" target="_blank">
           <FaInstagram />
         </Link>
-        <Link href="https://twitter.com/crazydoodle_nft" target="_blank">
+        <Link to="https://twitter.com/crazydoodle_nft" target="_blank">
           <FaTwitter />
         </Link>
       </div>

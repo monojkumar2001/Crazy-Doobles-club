@@ -19,10 +19,6 @@ function HomePage() {
             <LeftImages />
             <div
               className="hero-center-items d-flex align-items-center flex-column gap-4"
-              data-aos="fade-bottom"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-              data-aos-duration="2000"
             >
               <div className="hero-center-img">
                 <img src="/images/hero-center-img.svg" alt="" />
@@ -62,9 +58,8 @@ function HomePage() {
             <div
               className="about-us-content"
               data-aos="fade-right"
-              data-aos-offset="300"
               data-aos-easing="ease-in-sine"
-              data-aos-duration="2500"
+              data-aos-duration="1100"
             >
               <h1 className="section-title mb-4">ABOUT US</h1>
               <p>
@@ -85,9 +80,8 @@ function HomePage() {
             <div
               className="about-us-img"
               data-aos="fade-left"
-              data-aos-offset="300"
               data-aos-easing="ease-in-sine"
-              data-aos-duration="2500"
+              data-aos-duration="1000"
             >
               <img src="/images/about-us-img.svg" alt="" />
             </div>
@@ -358,7 +352,7 @@ function HomePage() {
                   data-aos="fade-right"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
-                  data-aos-duration="2000"
+                  data-aos-duration="1500"
                 >
                   <FaqContentItem
                     question="What is crazy doodles ?"
@@ -371,7 +365,7 @@ function HomePage() {
                   data-aos="fade-left"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
-                  data-aos-duration="2500"
+                  data-aos-duration="2000"
                 >
                   <FaqContentItem
                     question="What is crazy doodles ?"
@@ -382,7 +376,7 @@ function HomePage() {
                 <div
                   className="faq-content-item faq-content-item-3"
                   data-aos="fade-up"
-                  data-aos-duration="3000"
+                  data-aos-duration="2000"
                 >
                   <FaqContentItem
                     question="What is crazy doodles ?"
@@ -393,7 +387,7 @@ function HomePage() {
                 <div
                   className="faq-content-item faq-content-item-4"
                   data-aos="fade-up"
-                  data-aos-duration="3000"
+                  data-aos-duration="2000"
                 >
                   <FaqContentItem
                     question="What is crazy doodles ?"
@@ -405,9 +399,8 @@ function HomePage() {
               <div
                 className="faq-item-img"
                 data-aos="zoom-in"
-                data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
-                data-aos-duration="2500"
+                data-aos-duration="1500"
               >
                 <LazyLoadImage
                   src="/images/faq-img.svg"
