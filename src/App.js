@@ -24,7 +24,7 @@ function App() {
     <div className="app-con">
     <BrowserRouter>
     <Header/>
-    <Routes>
+    <Routes>   
       <Route path="/" element={<HomePage/>} />
       <Route path="/whitelist" element={< WhiteListPage/>} />
       <Route path="/mint" element={<MintPage/>} />

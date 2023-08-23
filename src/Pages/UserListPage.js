@@ -14,8 +14,8 @@ const UserListPage = () => {
               </p>
             </div>
             <div className="user-list-content">
-              <div class="table-responsive">
-                <table class="table table-hover">
+              <div className="table-responsive">
+                <table className="table table-hover">
                   <thead>
                     <tr>
                       <th scope="col">Id</th>
