@@ -183,6 +183,18 @@ ul.menu-nav-ul .left-side{
     width: 100px;
 }
 }
+@media screen and (max-width: 1450px) {
+  ul.menu-nav-ul {
+    padding: 15px 30px;
+}
+.connect-wallet-btn {
+  padding: 10px 20px;
+}
+ul.menu-nav-ul::before {
+  bottom: -15px;
+  left: 12px;
+}
+}
 @media screen and (max-width: 1300px) {
   nav.navigation {
     grid-template-columns: 35% 40%;

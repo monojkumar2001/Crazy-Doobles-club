@@ -1,8 +1,12 @@
-
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import Web3 from "web3";
+import Web3Modal from "web3modal";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import SocialMediaLinkItem from "./SocialMediaLink/SocialMediaLinkItem";
+import axios from "axios";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function Header() {
   const [navActive, setNavActive] = useState(false);
   const [sidebarActive, setSidebarActive] = useState(false);
@@ -19,6 +23,47 @@ function Header() {
       }
     });
   }, [navActive]);
+
+  // ----------connect wallet ======
+  const [walletConnected, setWalletConnected] = useState(false);
+  const connectWallet = async () => {
+    try {
+      if (window.ethereum) {
+        const providerOptions = {};
+
+        const web3Modal = new Web3Modal({
+          network: "mainnet",
+          cacheProvider: true,
+          providerOptions,
+        });
+
+        const provider = await web3Modal.connect();
+        const web3 = new Web3(provider);
+
+        web3.eth.net.getId();
+
+        const addresses = await web3.eth.getAccounts();
+
+        const address = addresses[0];
+        await axios.post("http://localhost:5000/api/v1/login", address);
+        const { ethereum } = window;
+
+        const networkId = await ethereum.request({
+          method: "net_version",
+        });
+
+        setWalletConnected(true);
+      } else {
+        window.open("https://metamask.io/download/");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  useEffect(() => {
+    connectWallet();
+  }, []);
 
   return (
     // <!-- =====================Navigation=========== -->
@@ -43,26 +88,26 @@ function Header() {
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
-                   Mint
+                    Mint
                   </HashLink>
                 </li>
                 <li className="nav-list">
-                  <HashLink
-                    to="#about"
+                  <Link
+                    to="/whitelist"
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
-                   About 
-                  </HashLink>
+                    Whitelist
+                  </Link>
                 </li>
                 <li className="nav-list">
-                  <HashLink
-                    to="#roadmap"
+                  <Link
+                    to="/userlist"
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
-                   Roadmap 
-                  </HashLink>
+                    User list
+                  </Link>
                 </li>
                 <li className="nav-list">
                   <HashLink
@@ -70,7 +115,7 @@ function Header() {
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
-                  Gallery
+                    Gallery
                   </HashLink>
                 </li>
                 <li className="nav-list">
@@ -79,7 +124,7 @@ function Header() {
                     className="nav-link"
                     onClick={_toggleSidebar}
                   >
-                   Faq
+                    Faq
                   </HashLink>
                 </li>
               </div>
@@ -88,10 +133,19 @@ function Header() {
                   <img src="/images/logo.png" alt="" className="logo-img" />
                 </Link>
               </li>
-              <div className="left-side d-flex algin-items-center">
-                <SocialMediaLinkItem/>
-                <button className="connect-wallet-btn">
-                  Connect wallet
+              <div className="left-side d-flex algin-items-center justify-content-center">
+                <SocialMediaLinkItem />
+                <div className="nav-list mt-2">
+                  <Link
+                    to="/login"
+                    className="nav-link"
+                    onClick={_toggleSidebar}
+                  >
+                    Login
+                  </Link>
+                </div>
+                <button className="connect-wallet-btn" onClick={connectWallet}>
+                  {walletConnected ? "CONNECTED" : "CONNECT WALLET"}
                 </button>
               </div>
             </ul>

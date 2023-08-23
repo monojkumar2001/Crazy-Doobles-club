@@ -11,7 +11,7 @@ const WhiteListPage = () => {
                 <h1 className='section-title'>EXCLUSIVE ACCESS</h1>
                 <p>wHITELLIST AND NFT DROPS</p>
                 <TimerCard/>
-                <div className="custom-btn">
+                <div className="custom-btn mt-4">
                 Join discord
                 </div>
               <div className="social-media-items mt-4">

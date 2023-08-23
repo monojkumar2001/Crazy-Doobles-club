@@ -11,7 +11,7 @@ const WhiteListPage2 = () => {
                 <h1 className='section-title'>EXCLUSIVE ACCESS</h1>
                 <p>wHITELLIST AND NFT DROPS</p>
                 <TimerCard/>
-                <div className="input-email-item mb-4">
+                <div className="input-email-item mb-4 mt-4">
                     <input type="email" placeholder='ENTER YOUR EMAIL' />
                 </div>
                 <div className="custom-btn">

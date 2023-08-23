@@ -551,6 +551,10 @@
 .mint-page .mint-page-blur-2 {
 display: none;
 }
+/* user list */
+.user-list {
+  padding: 120px 0 80px 0;
+}
   }
   @media screen and (max-width: 600px) {
     .left-sideImage .image-scale-4 {

@@ -1,0 +1,12 @@
+.user-list{
+    padding: 200px 0 100px 0;
+
+}
+.user-list-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.user-list-header p{
+    color: var(--black-color);
+}
+

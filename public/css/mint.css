@@ -2,6 +2,7 @@
     padding: 200px 0 0 0px;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .mint-page .mint-page-blur-1{
     position:absolute;

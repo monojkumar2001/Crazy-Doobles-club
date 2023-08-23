@@ -10,6 +10,8 @@ import WhiteListPage from "./Pages/WhiteListPage";
 import WhiteListPage2 from "./Pages/WhiteListPage2";
 import MintPage from "./Pages/MintPage";
 import GalleryPage from "./Pages/GalleryPage";
+import LoginRegisterPage from "./Pages/LoginRegisterPage";
+import UserListPage from "./Pages/UserListPage";
 function App() {
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap.bundle.min.js');
@@ -24,18 +26,12 @@ function App() {
     <Header/>
     <Routes>
       <Route path="/" element={<HomePage/>} />
-    </Routes>
-    <Routes>
       <Route path="/whitelist" element={< WhiteListPage/>} />
-    </Routes>
-    <Routes>
       <Route path="/mint" element={<MintPage/>} />
-    </Routes>
-    <Routes>
       <Route path="/whitelist-2" element={<WhiteListPage2/>} />
-    </Routes>
-    <Routes>
       <Route path="/gallery" element={<GalleryPage/>} />
+      <Route path="/login" element={<LoginRegisterPage/>} />
+      <Route path="/userlist" element={<UserListPage/>} />
     </Routes>
     </BrowserRouter>
     </div>
